@@ -3,15 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deborah class</title>
+    <title>To-Do list</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Heading one</h1>
-    <h2>Heading two</h2>
-    <h3>Heading three</h3>
-    <h4>Heading four</h4>
-    <h5>Heading five</h5>
-    <h6>Heading six</h6>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYkpAMeQ7efqBOQKrfmaR28jcKnHZgK5cQ9w&s" alt="Dice " width="200px" height="200px"/>
+    <div class="container">
+        <div class="todo-header">
+            <h2>To Do list</h2>
+            <img src="image/notebook.gif" height="50px" />
+
+        </div>
+
+
+        <div class="todo-body">
+        <input 
+            type="text"
+            id="todoText"
+            class="todo-input"
+            placeholder="Add your task"
+            />
+            <img 
+                src="image/plus.png" 
+                alt="+" 
+                id="AddUpdateClick" 
+                onclick="CreateToDoItems();"
+            />
+            </div>
+            <h5 id="Alert"></h5>
+            <ul id="list-items" class="list-items"></ul>
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
